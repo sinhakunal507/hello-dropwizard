@@ -1,0 +1,403 @@
+INFO  [2019-04-08 14:56:01,349] org.eclipse.jetty.util.log: Logging initialized @2300ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2019-04-08 14:56:01,515] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 14:56:01,517] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 14:56:01,528] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 14:56:01,528] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 14:56:01,530] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2019-04-08 14:56:01,692] org.eclipse.jetty.setuid.SetUIDListener: Opened application@58740366{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 14:56:01,692] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@47be0f9b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 14:56:01,694] org.eclipse.jetty.server.Server: jetty-9.4.z-SNAPSHOT
+INFO  [2019-04-08 14:56:02,733] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (com.pragtech.resources.HelloWorldResource)
+
+INFO  [2019-04-08 14:56:02,739] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6614bd4b{/,null,AVAILABLE}
+INFO  [2019-04-08 14:56:02,748] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2019-04-08 14:56:02,756] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@664e848c{/,null,AVAILABLE}
+INFO  [2019-04-08 14:56:02,776] org.eclipse.jetty.server.AbstractConnector: Started application@58740366{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 14:56:02,782] org.eclipse.jetty.server.AbstractConnector: Started admin@47be0f9b{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 14:56:02,782] org.eclipse.jetty.server.Server: Started @3735ms
+WARN  [2019-04-08 14:57:01,719] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+13.233.180.170 - - [08/Apr/2019:14:57:03 +0000] "GET / HTTP/1.1" 404 43 "-" "Go-http-client/1.1" 131
+WARN  [2019-04-08 14:58:01,705] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+INFO  [2019-04-08 14:58:56,743] org.eclipse.jetty.util.log: Logging initialized @2391ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2019-04-08 14:58:56,871] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 14:58:56,873] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 14:58:56,881] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 14:58:56,882] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 14:58:56,883] io.dropwizard.server.ServerFactory: Starting hello-world
+ERROR [2019-04-08 14:58:57,045] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.net.BindException: Address already in use
+! at sun.nio.ch.Net.bind0(Native Method)
+! at sun.nio.ch.Net.bind(Net.java:433)
+! at sun.nio.ch.Net.bind(Net.java:425)
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+! at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:298)
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200)
+! ... 8 common frames omitted
+! Causing: java.lang.RuntimeException: java.net.BindException: Address already in use
+! at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:188)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:67)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:74)
+! at io.dropwizard.Application.run(Application.java:89)
+! at com.pragtech.HelloWorldApplication.main(HelloWorldApplication.java:12)
+java.net.BindException: Address already in use
+WARN  [2019-04-08 14:59:01,705] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+INFO  [2019-04-08 15:00:03,795] org.eclipse.jetty.util.log: Logging initialized @2409ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2019-04-08 15:00:03,911] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 15:00:03,914] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 15:00:03,917] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 15:00:03,918] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 15:00:03,919] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2019-04-08 15:00:04,123] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4993febc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 15:00:04,124] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@7601bc96{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 15:00:04,126] org.eclipse.jetty.server.Server: jetty-9.4.z-SNAPSHOT
+INFO  [2019-04-08 15:00:05,137] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (com.pragtech.resources.HelloWorldResource)
+
+INFO  [2019-04-08 15:00:05,141] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6242ae3b{/,null,AVAILABLE}
+INFO  [2019-04-08 15:00:05,154] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2019-04-08 15:00:05,160] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3f8dfe74{/,null,AVAILABLE}
+INFO  [2019-04-08 15:00:05,183] org.eclipse.jetty.server.AbstractConnector: Started application@4993febc{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 15:00:05,184] org.eclipse.jetty.server.AbstractConnector: Started admin@7601bc96{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 15:00:05,190] org.eclipse.jetty.server.Server: Started @3800ms
+INFO  [2019-04-08 15:01:12,677] org.eclipse.jetty.util.log: Logging initialized @2364ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2019-04-08 15:01:12,828] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 15:01:12,830] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 15:01:12,834] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2019-04-08 15:01:12,835] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2019-04-08 15:01:12,837] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2019-04-08 15:01:12,972] org.eclipse.jetty.setuid.SetUIDListener: Opened application@4c2af006{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 15:01:12,973] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@44032fde{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 15:01:12,975] org.eclipse.jetty.server.Server: jetty-9.4.z-SNAPSHOT
+INFO  [2019-04-08 15:01:13,987] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /hello-world (com.pragtech.resources.HelloWorldResource)
+
+INFO  [2019-04-08 15:01:13,997] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4d499d65{/,null,AVAILABLE}
+INFO  [2019-04-08 15:01:14,003] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2019-04-08 15:01:14,015] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@787e4357{/,null,AVAILABLE}
+INFO  [2019-04-08 15:01:14,035] org.eclipse.jetty.server.AbstractConnector: Started application@4c2af006{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2019-04-08 15:01:14,036] org.eclipse.jetty.server.AbstractConnector: Started admin@44032fde{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2019-04-08 15:01:14,037] org.eclipse.jetty.server.Server: Started @3725ms
+127.0.0.1 - - [08/Apr/2019:15:01:44 +0000] "GET /hello-world HTTP/1.1" 200 37 "http://localhost/hello" "ELinks/0.12pre6 (textmode; Linux; 157x44-2)" 150
+13.233.141.105 - - [08/Apr/2019:15:02:06 +0000] "GET / HTTP/1.1" 404 43 "-" "Go-http-client/1.1" 28
+WARN  [2019-04-08 15:02:12,989] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+WARN  [2019-04-08 15:03:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+WARN  [2019-04-08 15:04:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+WARN  [2019-04-08 15:05:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+13.233.233.19 - - [08/Apr/2019:15:05:49 +0000] "GET / HTTP/1.1" 404 43 "-" "Go-http-client/1.1" 2
+WARN  [2019-04-08 15:06:12,985] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+WARN  [2019-04-08 15:07:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+WARN  [2019-04-08 15:08:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+13.233.113.167 - - [08/Apr/2019:15:09:05 +0000] "GET / HTTP/1.1" 404 43 "-" "Go-http-client/1.1" 3
+WARN  [2019-04-08 15:09:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+47.31.72.25 - - [08/Apr/2019:15:10:11 +0000] "GET /hello-world HTTP/1.1" 200 37 "-" "Mozilla/5.0 (Linux; Android 8.1.0; G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36" 6
+47.31.72.25 - - [08/Apr/2019:15:10:11 +0000] "GET /favicon.ico HTTP/1.1" 404 43 "http://13.233.87.11:8080/hello-world" "Mozilla/5.0 (Linux; Android 8.1.0; G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36" 3
+WARN  [2019-04-08 15:10:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
+47.31.72.25 - - [08/Apr/2019:15:10:38 +0000] "GET /hello-world HTTP/1.1" 200 37 "-" "Mozilla/5.0 (Linux; Android 8.1.0; G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.90 Mobile Safari/537.36" 2
+WARN  [2019-04-08 15:11:12,984] com.codahale.metrics.graphite.GraphiteReporter: Unable to report to Graphite
+! java.net.ConnectException: Connection refused (Connection refused)
+! at java.net.PlainSocketImpl.socketConnect(Native Method)
+! at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+! at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+! at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+! at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+! at java.net.Socket.connect(Socket.java:589)
+! at java.net.Socket.connect(Socket.java:538)
+! at java.net.Socket.<init>(Socket.java:434)
+! at java.net.Socket.<init>(Socket.java:244)
+! at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:277)
+! at com.codahale.metrics.graphite.Graphite.connect(Graphite.java:126)
+! at com.codahale.metrics.graphite.GraphiteReporter.report(GraphiteReporter.java:240)
+! at com.codahale.metrics.ScheduledReporter.report(ScheduledReporter.java:251)
+! at com.codahale.metrics.ScheduledReporter$1.run(ScheduledReporter.java:174)
+! at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+! at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+! at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+! at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+! at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+! at java.lang.Thread.run(Thread.java:748)
