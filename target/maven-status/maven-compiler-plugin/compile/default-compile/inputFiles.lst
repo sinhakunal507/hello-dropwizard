@@ -1,0 +1,5 @@
+/dropwizard/hello-dropwizard/src/main/java/com/pragtech/HelloWorldApplication.java
+/dropwizard/hello-dropwizard/src/main/java/com/pragtech/model/Saying.java
+/dropwizard/hello-dropwizard/src/main/java/com/pragtech/config/HelloWorldConfiguration.java
+/dropwizard/hello-dropwizard/src/main/java/com/pragtech/health/TemplateHealthCheck.java
+/dropwizard/hello-dropwizard/src/main/java/com/pragtech/resources/HelloWorldResource.java

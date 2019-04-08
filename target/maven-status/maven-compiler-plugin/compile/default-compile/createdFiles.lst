@@ -1,0 +1,5 @@
+com/pragtech/HelloWorldApplication.class
+com/pragtech/config/HelloWorldConfiguration.class
+com/pragtech/resources/HelloWorldResource.class
+com/pragtech/health/TemplateHealthCheck.class
+com/pragtech/model/Saying.class
